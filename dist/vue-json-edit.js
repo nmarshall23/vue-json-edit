@@ -848,13 +848,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "ItemAddForm",
@@ -2127,7 +2120,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('b-field', {
+  return _c('div', [_c('b-field', {
     attrs: {
       "grouped": ""
     }
@@ -2202,21 +2195,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       expression: "valName"
     }
-  }, [_vm._v("\n        " + _vm._s(_vm.valName) + "\n      ")]) : _vm._e()] : _vm._e(), _vm._v(" "), _c('p', {
-    staticClass: "control"
+  }, [_vm._v("\n        " + _vm._s(_vm.valName) + "\n      ")]) : _vm._e()] : _vm._e()], 2), _vm._v(" "), _c('div', {
+    staticClass: "buttons"
   }, [_c('button', {
     staticClass: "button is-primary is-small",
     on: {
       "click": _vm.confirm
     }
-  }, [_vm._v("Add")])]), _vm._v(" "), _c('p', {
-    staticClass: "control"
-  }, [_c('button', {
+  }, [_vm._v("Add")]), _vm._v(" "), _c('button', {
     staticClass: "button is-small",
     on: {
       "click": _vm.cancel
     }
-  }, [_vm._v("Cancel")])])], 2)
+  }, [_vm._v("Cancel")])])], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
