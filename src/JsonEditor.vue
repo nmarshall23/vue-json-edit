@@ -16,8 +16,8 @@ export default {
         this.parsedData = this.jsonParse(this.objData)
     },
     watch: {
-        'parsedData': {
-            handler(newValue, oldValue) {
+        parsedData: {
+            handler: function() {
                 this.$emit('input', this.makeJson(this.parsedData))
 　　　　　　  },
 　　　　    deep: true
@@ -27,7 +27,7 @@ export default {
         'jsonParse': function (jsonStr) {
 
             //
-            let parseJson = (json) => {
+            const parseJson = (json) => {
                 let result = []
                 let keys = Object.keys(json)
                 keys.forEach((k, index) => {
@@ -66,7 +66,7 @@ export default {
             }
 
             //
-            let parseArray = (arrayObj) => {
+            const parseArray = (arrayObj) => {
                 let result = []
                 for (let i = 0; i < arrayObj.length; ++i) {
                     let val = arrayObj[i]
@@ -98,7 +98,7 @@ export default {
             }
 
             // --
-            let parseBody = (json) => {
+            const parseBody = (json) => {
                 let r = parseJson(json)
                 return r
             }

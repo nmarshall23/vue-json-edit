@@ -83,19 +83,19 @@ export default {
         'newItem': function (obj) {
             this.toAddItem = false
     
-            let oj = {
-                'name': obj.key,
-                'type': obj.type
+            const objData = {
+              name: obj.key,
+              type: obj.type,
+              childParams: null,
+              remark: null
             }
             if(obj.type == 'array' || obj.type == 'object') {
-                oj.childParams = obj.val
-                oj.remark = null
+                objData.childParams = obj.val
             } else {
-                oj.childParams = null
-                oj.remark = obj.val
+                objData.remark = obj.val
             }
 
-            this.flowData.push(oj)
+            this.flowData.push(objData)
             this.$emit('input', this.flowData)
             this.cancelNewItem()
         }

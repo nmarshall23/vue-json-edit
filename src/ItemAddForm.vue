@@ -86,21 +86,21 @@ export default {
     },
     methods: {
         confirm: function() {
-            let val = null;
+          
+            const objData = {
+                key: this.needName ? this.keyName : null,
+                val: null,
+                type: this.formatSelected
+            };
+
             if (
                 this.formatSelected === "array" ||
                 this.formatSelected === "object"
             ) {
-                val = [];
+                objData.val = [];
             } else {
-                val = this.valName;
+                objData.val = this.valName;
             }
-
-            let objData = {
-                key: this.needName ? this.keyName : null,
-                val: val,
-                type: this.formatSelected
-            };
 
             this.$emit("confirm", objData);
             this.keyName = "";

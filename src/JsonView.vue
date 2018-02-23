@@ -84,24 +84,24 @@ export default {
 
         'newItem': function (obj) {
     
-            let oj = {
-                'name': obj.key,
-                'type': obj.type
+            const objData = {
+              name: obj.key,
+              type: obj.type,
+              childParams: null,
+              remark: null
             }
             if(obj.type == 'array' || obj.type == 'object') {
-                oj.childParams = obj.val
-                oj.remark = null
+                objData.childParams = obj.val
             } else {
-                oj.childParams = null
-                oj.remark = obj.val
+                objData.remark = obj.val
             }
 
-            if(!oj.name) {
+            if(!objData.name) {
                 alert('please must input a name!')
                 return
             } else {
 
-                this.flowData.push(oj)
+                this.flowData.push(objData)
                 this.$emit('input', this.flowData)
                 this.cancelNewItem()
             }
