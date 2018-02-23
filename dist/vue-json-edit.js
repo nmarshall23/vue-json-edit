@@ -1259,7 +1259,7 @@ exports.i(__webpack_require__(22), "");
 exports.i(__webpack_require__(19), "");
 
 // module
-exports.push([module.i, "\np {\n  margin: 0;\n}\nol,\nul {\n  margin: 0;\n}\n.json_block {\n  position: relative;\n  display: block;\n  line-height: 30px;\n}\n.json_block.hide-block {\n  background: #f5f5f5;\n}\n.json_block.hide-block .json-val {\n  display: none;\n}\n.json_block.hide-block .collapse-down {\n  transform: rotate(-90deg);\n}\n.del-btn {\n  position: absolute;\n  top: 0;\n  right: 0;\n  z-index: 99999999999999;\n  cursor: pointer;\n  transition: opacity .4s ease;\n}\n.del-btn:hover {\n  opacity: .6;\n}\n.des {\n  position: absolute;\n  right: 14px;\n  font-size: 10px;\n  line-height: 30px;\n  color: #6190e8;\n  cursor: pointer;\n}\n.add-des {\n  color: #999;\n}\n.block_content {\n  text-align: left;\n  margin-left: 30px;\n  line-height: 1.5 !important;\n}\n.block_content .i-type {\n  color: #999;\n}\n.block_content .key-input,\n.block_content .val-input {\n  width: 140px;\n  border: none;\n  height: 25px;\n  padding: 0 5px;\n  font-weight: bold;\n  font-size: 14px;\n  background: rgba(0, 0, 0, 0);\n}\n.block_content .key-input:focus,\n.block_content .val-input:focus {\n  background: #ffffa0;\n  border: none;\n  outline: 0;\n}\n.block_content .val-input {\n  font-weight: normal;\n  color: #0b8e6b;\n}\n.block_content .json-key {\n  font-weight: bold;\n}\n.block_content .json-key.json-desc {\n  color: #999;\n  font-size: .8em;\n}\n.collopsed:before {\n  content: '';\n  display: inline-block;\n  height: 10px;\n  width: 10px;\n  background: #333;\n}\n.collapse-down {\n  float: left;\n  margin-top: 2px;\n  margin-right: 2px;\n  color: #000;\n  cursor: pointer;\n  transition: transform .2s ease;\n}\n.add-key {\n  display: inline-block;\n  padding-left: 2px;\n  padding-right: 2px;\n  margin-bottom: 10px;\n  font-size: .8em;\n  line-height: 1em;\n  cursor: pointer;\n}\n.array-ol {\n  padding-left: 20px !important;\n}\n.array-item {\n  position: relative;\n}\n.array-item.hide-item {\n  background: #f5f5f5;\n}\n.array-item.hide-item .json-val {\n  display: none;\n}\n.array-item.hide-item .collapse-down {\n  transform: rotate(-90deg);\n}\n", ""]);
+exports.push([module.i, "\np {\n  margin: 0;\n}\nol,\nul {\n  margin: 0;\n}\n.json_block {\n  position: relative;\n  display: block;\n  line-height: 30px;\n}\n.json_block.hide-block {\n  background: #f5f5f5;\n}\n.json_block.hide-block .json-val {\n  display: none;\n}\n.json_block.hide-block .collapse-down {\n  transform: rotate(-90deg);\n}\n.del-btn {\n  position: absolute;\n  top: 0;\n  right: 0;\n  z-index: 99999999999999;\n  cursor: pointer;\n  transition: opacity .4s ease;\n}\n.del-btn:hover {\n  opacity: .6;\n}\n.des {\n  position: absolute;\n  right: 14px;\n  font-size: 10px;\n  line-height: 30px;\n  color: #6190e8;\n  cursor: pointer;\n}\n.add-des {\n  color: #999;\n}\n.json_block_content {\n  text-align: left;\n  margin-left: 30px;\n  line-height: 1.5 !important;\n}\n.json_block_content .i-type {\n  color: #999;\n}\n.json_block_content .key-input,\n.json_block_content .val-input {\n  width: 140px;\n  border: none;\n  height: 25px;\n  padding: 0 5px;\n  font-weight: bold;\n  font-size: 14px;\n  background: rgba(0, 0, 0, 0);\n}\n.json_block_content .key-input:focus,\n.json_block_content .val-input:focus {\n  background: #ffffa0;\n  border: none;\n  outline: 0;\n}\n.json_block_content .val-input {\n  font-weight: normal;\n  color: #0b8e6b;\n}\n.json_block_content .json-key {\n  font-weight: bold;\n}\n.json_block_content .json-key.json-desc {\n  color: #999;\n  font-size: .8em;\n}\n.collopsed:before {\n  content: '';\n  display: inline-block;\n  height: 10px;\n  width: 10px;\n  background: #333;\n}\n.collapse-down {\n  float: left;\n  margin-top: 2px;\n  margin-right: 2px;\n  color: #000;\n  cursor: pointer;\n  transition: transform .2s ease;\n}\n.add-key {\n  display: inline-block;\n  padding-left: 2px;\n  padding-right: 2px;\n  margin-bottom: 10px;\n  font-size: .8em;\n  line-height: 1em;\n  cursor: pointer;\n}\n.array-ol {\n  padding-left: 20px !important;\n}\n.array-item {\n  position: relative;\n}\n.array-item.hide-item {\n  background: #f5f5f5;\n}\n.array-item.hide-item .json-val {\n  display: none;\n}\n.array-item.hide-item .collapse-down {\n  transform: rotate(-90deg);\n}\n", ""]);
 
 // exports
 
@@ -1747,7 +1747,7 @@ module.exports = "data:application/font-woff;base64,d09GRgABAAAAAAtkAA8AAAAAE/gA
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "block_content"
+    staticClass: "json_block_content"
   }, [_vm._l((_vm.flowData), function(item, index) {
     return _c('span', {
       key: index,
@@ -1958,7 +1958,7 @@ if (false) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "block_content array"
+    staticClass: "json_block_content array"
   }, [_c('ol', {
     staticClass: "array-ol"
   }, _vm._l((_vm.flowData), function(member, index) {

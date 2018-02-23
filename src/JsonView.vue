@@ -1,5 +1,5 @@
 <template>
-    <div class="block_content">
+    <div class="json_block_content">
         <span v-for="(item, index) in flowData" :key="index" :class="['json_block', 'clearfix', {'hide-block': hideMyBlock[index] == true}]">
             <span class="json-key">
                 <input type="text" v-model="item.name" class="key-input" v-if="typeof item.name == 'string'" @blur="keyInputBlur(item, $event)">

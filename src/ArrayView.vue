@@ -1,5 +1,5 @@
 <template>
-    <div class="block_content array">
+    <div class="json_block_content array">
         <ol class="array-ol">
             <li v-for="(member, index) in flowData" :key="index" :class="['array-item', {'hide-item': hideMyItem[index] == true}]">
                 <p v-if="member.type !== 'object' && member.type !== 'array'">
