@@ -1,4 +1,5 @@
 <template>
+  <div>
   <b-field 
     grouped
 
@@ -51,20 +52,12 @@
           {{ valName }}
         </b-checkbox>
     </template>
-
-    <p class="control">
-        <button 
-          class="button is-primary is-small"
-          @click="confirm" 
-        >Add</button>
-    </p>
-    <p class="control">
-        <button 
-          class="button is-small" 
-          @click="cancel" 
-        >Cancel</button>
-    </p>
   </b-field>
+    <div class="buttons">
+      <button class="button is-primary is-small" @click="confirm">Add</button>
+      <button class="button is-small" @click="cancel">Cancel</button>
+    </div>
+  </div>
 </template>
 
 <script>
