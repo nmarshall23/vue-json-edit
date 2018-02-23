@@ -39,7 +39,7 @@
 
         <item-add-form v-if="toAddItem" @confirm="newItem" @cancel="cancelNewItem" :needName="false"></item-add-form>
 
-        <div class="block add-key" v-if="!toAddItem" @click="addItem">
+        <div class="json_block add-key" v-if="!toAddItem" @click="addItem">
             <i class="icon-plus"></i>
         </div>
     </div>

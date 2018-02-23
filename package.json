@@ -1,8 +1,11 @@
 {
   "name": "vue-json-edit",
-  "version": "1.1.5",
+  "version": "1.2.0",
   "description": "visual JSON editor built as an vue component",
   "author": "Jinkin1995 <jinkin1995@gmail.com>",
+  "contributors": [
+    "Nicholas Marshall <nmarshall23@gmail.com>"
+  ],
   "scripts": {
     "dev": "webpack-dev-server --watch --progress --config webpack.example.js --open --hot --host 127.0.0.1",
     "example": "rm -rf ./example/dist/*.js && rm -rf ./example/dist/*.html && webpack --progress --config webpack.example.js",
@@ -29,7 +32,8 @@
     "url": "https://github.com/jinkin1995/vue-json-edit/issues"
   },
   "dependencies": {
-    "vue": "^2.2.2"
+    "buefy": "^0.6.3",
+    "vue": "^2.5.13"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
